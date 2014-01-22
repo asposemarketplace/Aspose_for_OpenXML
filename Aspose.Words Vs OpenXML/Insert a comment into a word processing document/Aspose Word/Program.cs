@@ -1,9 +1,4 @@
 ﻿using Aspose.Words;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose_Word
 {
@@ -40,7 +35,7 @@ namespace Aspose_Word
             builder.Write("This is text aftr comment");
 
             // Save output document.
-            doc.Save(@"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Insert a Comment in Word Processing document.docx");
+            doc.Save("Insert a Comment in Word Processing document.docx");
         }
     }
 }

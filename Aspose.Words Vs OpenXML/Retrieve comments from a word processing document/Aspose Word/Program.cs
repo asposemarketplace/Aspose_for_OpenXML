@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Words;
 using System.Collections;
+using Aspose.Words;
 namespace Aspose_Word
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Document doc = new Document(@"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Retrieve comments from word processing document.docx");
+            Document doc = new Document("Retrieve comments from word processing document.docx");
             ExtractComments(doc);
 
         }

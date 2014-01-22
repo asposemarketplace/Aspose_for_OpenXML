@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 namespace OpenXML_SDK
@@ -11,7 +8,7 @@ namespace OpenXML_SDK
     {
         static void Main(string[] args)
         {
-            AddCommentOnFirstParagraph(@"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Insert a Comment in Word Processing document.docx",
+            AddCommentOnFirstParagraph("Insert a Comment in Word Processing document.docx",
             "author", "initials", "This is my comment.");
         }
         // Insert a comment on the first paragraph.

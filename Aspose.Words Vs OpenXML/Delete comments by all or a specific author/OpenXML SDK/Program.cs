@@ -1,10 +1,8 @@
-﻿using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace OpenXML_SDK
 {
@@ -12,7 +10,7 @@ namespace OpenXML_SDK
     {
         static void Main(string[] args)
         {
-            DeleteComments(@"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Delete comments by all or by an specific author.docx", "");
+            DeleteComments("Delete comments by all or by an specific author.docx", "");
         }
         // Delete comments by a specific author. Pass an empty string for the 
         // author to delete all comments, by all authors.

@@ -1,10 +1,6 @@
-﻿using DocumentFormat.OpenXml.Packaging;
+﻿using System;
+using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OpenXML_SDK
 {
@@ -12,7 +8,7 @@ namespace OpenXML_SDK
     {
         static void Main(string[] args)
         {
-            string fileName = @"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Retrieve comments from word processing document.docx";
+            string fileName = "Retrieve comments from word processing document.docx";
             GetCommentsFromDocument(fileName);
         }
         public static void GetCommentsFromDocument(string fileName)

@@ -6,7 +6,7 @@ namespace Aspose_Word
     {
         static void Main(string[] args)
         {
-            string path = @"E:\Dropbox\Personal\Aspose Vs OpenXML\Files\Change or Replace Header and footer.docx";
+            string path = "Change or Replace Header and footer.docx";
             ChangeHeader(path);
 
         }

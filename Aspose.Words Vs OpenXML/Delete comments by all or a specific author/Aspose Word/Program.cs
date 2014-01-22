@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Words;
+﻿using Aspose.Words;
 namespace Aspose_Word
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Document doc=new Document(@"F:\Dropbox\Personal\Aspose Vs OpenXML\Files\Delete comments by all or by an specific author.docx");
+            Document doc=new Document("Delete comments by all or by an specific author.docx");
             RemoveComments(doc, "");
         }
         public static void RemoveComments(Document doc, string authorName)
