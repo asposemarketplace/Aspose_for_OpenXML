@@ -11,7 +11,7 @@ namespace Field_Update
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"F:\Dropbox\Personal\Aspose Vs OpenXML\Features Supported by Aspose not Open XML\Aspose.Words Features\Field Update\Data\";
             Document doc = new Document(MyDir + "Rendering.docx");
 
             // This updates all fields in the document.

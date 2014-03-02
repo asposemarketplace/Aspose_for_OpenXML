@@ -11,7 +11,7 @@ namespace Copy_btw_Workboks
     {
         static void Main(string[] args)
         {
-            string MyDir = ""; 
+            string MyDir = @"Files\";
             //Create a Workbook.
             //Open a file into the first book.
             Workbook excelWorkbook0 = new Workbook(MyDir + "WorkBook Operations.xls");
@@ -23,7 +23,7 @@ namespace Copy_btw_Workboks
             excelWorkbook1.Worksheets[0].Copy(excelWorkbook0.Worksheets[0]);
 
             //Save the file.
-            excelWorkbook1.Save(MyDir+"ResultedBook.xls");
+            excelWorkbook1.Save(MyDir + "ResultedBook.xls");
         }
     }
 }

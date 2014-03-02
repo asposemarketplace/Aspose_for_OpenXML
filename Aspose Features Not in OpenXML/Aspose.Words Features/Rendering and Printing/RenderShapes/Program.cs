@@ -1,13 +1,13 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Reflection;
-using System.Drawing;
 using Aspose.Words;
 using Aspose.Words.Drawing;
 using Aspose.Words.Rendering;
 using Aspose.Words.Saving;
 using Aspose.Words.Tables;
-using System.Drawing.Imaging;
 
 
 namespace RenderShapes
@@ -19,7 +19,7 @@ namespace RenderShapes
             // Sample infrastructure.
             string exeDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar;
             string dataDir = new Uri(new Uri(exeDir), @"../../Data/").LocalPath;
-            
+
             // Load the documents which store the shapes we want to render.
             Document doc = new Document(dataDir + "RenderShapes.doc");
             Document doc2 = new Document(dataDir + "RenderShapes.docx");
@@ -122,7 +122,7 @@ namespace RenderShapes
 
             // Find the size that the shape will be rendered to at the specified scale and resolution.
             Size shapeSizeInPixels = r.GetSizeInPixels(1.0f, 96.0f);
-            
+
             // Rotating the shape may result in clipping as the image canvas is too small. Find the longest side
             // and make sure that the graphics canvas is large enough to compensate for this.
             int maxSide = Math.Max(shapeSizeInPixels.Width, shapeSizeInPixels.Height);
@@ -216,7 +216,7 @@ namespace RenderShapes
             }
             //ExEnd
         }
- 
+
         //ExStart
         //ExId:RenderNode
         //ExSummary:Shows how to render a node independent of the document by building on the functionality provided by ShapeRenderer class.

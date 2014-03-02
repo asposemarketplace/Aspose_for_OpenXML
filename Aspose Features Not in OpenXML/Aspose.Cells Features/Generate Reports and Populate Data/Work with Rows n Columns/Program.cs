@@ -1,10 +1,5 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Aspose.Cells;
 
 namespace Work_with_Rows_n_Col
 {
@@ -22,7 +17,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void InsertRow()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 
@@ -44,7 +39,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void InsertingMutipleRows()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 
@@ -65,7 +60,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void DeletingRow()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 
@@ -86,7 +81,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void DeletingMutipleRows()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 
@@ -106,7 +101,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void InsertingAColumn()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 
@@ -126,7 +121,7 @@ namespace Work_with_Rows_n_Col
         }
         public static void DeletingColumn()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "Row and Column Operation.xls", FileMode.Open);
 

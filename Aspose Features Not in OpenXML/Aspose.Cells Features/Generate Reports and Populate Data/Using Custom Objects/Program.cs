@@ -1,9 +1,5 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Aspose.Cells;
 
 namespace Using_Custom_Objects
 {
@@ -11,7 +7,7 @@ namespace Using_Custom_Objects
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate the workbookdesigner object.
             WorkbookDesigner report = new WorkbookDesigner();
             //Get the first worksheet(default sheet) in the workbook.
@@ -35,7 +31,7 @@ namespace Using_Custom_Objects
             report.Process(false);
 
             //Save the excel file.
-            report.Workbook.Save(MyDir+"Smart Marker Customobjects.xls");
+            report.Workbook.Save(MyDir + "Smart Marker Customobjects.xls");
         }
     }
     //Definition of Custom class.

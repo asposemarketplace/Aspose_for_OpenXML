@@ -1,11 +1,6 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.OleDb;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Cells;
 
 namespace Grouping_Data_OLE_DB
 {
@@ -13,9 +8,9 @@ namespace Grouping_Data_OLE_DB
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Create a connection object, specify the provider info and set the data source.
-            OleDbConnection con = new OleDbConnection("provider=microsoft.jet.oledb.4.0;data source=F:\\Dropbox\\Zeeshan\\Aspose Vs OpenXML\\Features Supported by Aspose not Open XML\\Aspose.Cells Features\\Generate Reports and Populate Data\\Grouping Data OLE DB\\Data\\Northwind.mdb");
+            OleDbConnection con = new OleDbConnection("provider=microsoft.jet.oledb.4.0;data source=Files\\Generate Reports and Populate Data\\Grouping Data OLE DB\\Data\\Northwind.mdb");
 
             //Open the connection object.
             con.Open();

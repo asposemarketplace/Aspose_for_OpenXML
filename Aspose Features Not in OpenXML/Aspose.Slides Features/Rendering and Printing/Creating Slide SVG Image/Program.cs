@@ -1,10 +1,5 @@
-﻿using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Aspose.Slides.Pptx;
 
 namespace Creating_Slide_SVG_Image
 {
@@ -13,8 +8,8 @@ namespace Creating_Slide_SVG_Image
         static void Main(string[] args)
         {
             //Instantiate a Presentation class that represents the presentation file
-            string MyDir = "";
-            using (PresentationEx pres = new PresentationEx(MyDir+"Slides Test Presentation.pptx"))
+            string MyDir = @"Files\";
+            using (PresentationEx pres = new PresentationEx(MyDir + "Slides Test Presentation.pptx"))
             {
 
                 //Access the second slide
@@ -28,7 +23,7 @@ namespace Creating_Slide_SVG_Image
                 SvgStream.Position = 0;
 
                 //Save memory stream to file
-                using (Stream fileStream = System.IO.File.OpenWrite(MyDir+ "PresentatoinTemplate.svg"))
+                using (Stream fileStream = System.IO.File.OpenWrite(MyDir + "PresentatoinTemplate.svg"))
                 {
                     byte[] buffer = new byte[8 * 1024];
                     int len;
@@ -40,7 +35,7 @@ namespace Creating_Slide_SVG_Image
                 }
                 SvgStream.Close();
             }
- 
+
         }
     }
 }

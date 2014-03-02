@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Joining_Mutiple_documents
+namespace JoiningMutipleDocuments
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             // The document that the other documents will be appended to.
             Document dstDoc = new Document();
 
@@ -22,18 +22,18 @@ namespace Joining_Mutiple_documents
             for (int i = 1; i <= recordCount; i++)
             {
                 // Open the document to join.
-                Document srcDoc = new Document(MyDir+"src.doc");
+                Document srcDoc = new Document(MyDir + "src.doc");
 
                 // Append the source document at the end of the destination document.
                 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-                Document doc2 = new Document(MyDir+"srcDocument.doc");
+                Document doc2 = new Document(MyDir + "srcDocument.doc");
                 dstDoc.AppendDocument(doc2, ImportFormatMode.UseDestinationStyles);
                 // If this is the second document or above being appended then unlink all headers footers in this section
                 // from the headers and footers of the previous section.
                 if (i > 1)
                     dstDoc.Sections[i].HeadersFooters.LinkToPrevious(false);
             }
-            dstDoc.Save(MyDir+"MutipleJoinedDocument.doc");
+            dstDoc.Save(MyDir + "MutipleJoinedDocument.doc");
         }
     }
 }

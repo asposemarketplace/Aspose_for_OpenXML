@@ -1,18 +1,13 @@
 ﻿using Aspose.Words;
 using Aspose.Words.Saving;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Convert_Doc_to_EPUB
+namespace ConvertDocumentToEPUB
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             // Open an existing document from disk.
             Document doc = new Document(MyDir + "Converting Document.docx");
 

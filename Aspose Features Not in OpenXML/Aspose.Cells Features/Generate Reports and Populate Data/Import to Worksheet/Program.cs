@@ -1,12 +1,8 @@
-﻿using Aspose.Cells;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Web;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Cells;
 
 namespace Import_to_Worksheet
 {
@@ -22,7 +18,7 @@ namespace Import_to_Worksheet
         }
         public static void ImportFromArray()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -44,7 +40,7 @@ namespace Import_to_Worksheet
         }
         public static void ImportFromArrayList()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -71,7 +67,7 @@ namespace Import_to_Worksheet
         }
         public static void ImportFromCustomObject()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate a new Workbook
             Workbook book = new Workbook();
             //Clear all the worksheets
@@ -105,7 +101,7 @@ namespace Import_to_Worksheet
         }
         public static void ImportFromDataTable()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 

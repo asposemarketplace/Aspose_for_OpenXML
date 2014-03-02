@@ -1,10 +1,4 @@
-﻿using Aspose.Slides;
-using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Aspose.Slides.Pptx;
 
 namespace Print_Presentation
 {
@@ -17,9 +11,9 @@ namespace Print_Presentation
         }
         public static void PrintByDefaultPrinter()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Load the presentation
-            PresentationEx asposePresentation = new PresentationEx(MyDir+"Print.pptx");
+            PresentationEx asposePresentation = new PresentationEx(MyDir + "Print.pptx");
 
             //Call the print method to print whole presentation to the default printer
             asposePresentation.Print();
@@ -27,9 +21,9 @@ namespace Print_Presentation
         }
         public static void PrintBySpecificPrinter()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Load the presentation
-            PresentationEx asposePresentation = new PresentationEx(MyDir+"Print.pptx");
+            PresentationEx asposePresentation = new PresentationEx(MyDir + "Print.pptx");
 
             //Call the print method to print whole presentation to the desired printer
             asposePresentation.Print("LaserJet1100");

@@ -11,10 +11,10 @@ namespace Move_Worksheet
     {
         static void Main(string[] args)
         {
-            string MyDir = ""; 
+            string MyDir = @"Files\";
             //Create a new Workbook.
             //Open an existing excel file.
-            Workbook wb = new Workbook(MyDir+"WorkBook Operations.xls");
+            Workbook wb = new Workbook(MyDir + "WorkBook Operations.xls");
 
             //Create a Worksheets object with reference to
             //the sheets of the Workbook.
@@ -22,13 +22,13 @@ namespace Move_Worksheet
 
             //Get the first worksheet.
             Worksheet worksheet = sheets[0];
-            string test=worksheet.Name;
+            string test = worksheet.Name;
             //Move the first sheet to the third position in the workbook.
             worksheet.MoveTo(2);
 
             //Save the excel file.
-            wb.Save(MyDir+"Move worksheets within workbook.xls");
- 
+            wb.Save(MyDir + "Move worksheets within workbook.xls");
+
         }
     }
 }

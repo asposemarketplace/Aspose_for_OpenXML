@@ -1,12 +1,7 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using Aspose.Cells;
 
-namespace Direct_Formulae_Call
+namespace Direct_Formula_Call
 {
     class Program
     {
@@ -34,7 +29,7 @@ namespace Direct_Formulae_Call
             Debug.WriteLine("Value of A1: " + cellA1.StringValue);
             Debug.WriteLine("Value of A2: " + cellA2.StringValue);
             Debug.WriteLine("Result of Sum(A1:A2): " + results.ToString());
-            workbook.Save("Calulate Any Formulae.xls");
+            workbook.Save("Calulate Any Formula.xls");
         }
     }
 }

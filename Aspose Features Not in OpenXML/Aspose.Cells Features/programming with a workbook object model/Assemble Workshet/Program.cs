@@ -20,7 +20,7 @@ namespace Assemble_Workshet
         }
         public static void AddingWorksheetToNewExcelFile()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -34,13 +34,13 @@ namespace Assemble_Workshet
             worksheet.Name = "My Worksheet";
 
             //Saving the Excel file
-            workbook.Save(MyDir+"Adding Worksheet.xls");
+            workbook.Save(MyDir + "Adding Worksheet.xls");
         }
         public static void AddingWorksheetToDesignerSpreadsheet()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
-            FileStream fstream = new FileStream("C:\\book1.xls", FileMode.Open);
+            FileStream fstream = new FileStream("WorksHeet Operations.xls", FileMode.Open);
 
             //Instantiating a Workbook object
             //Opening the Excel file through the file stream
@@ -56,14 +56,14 @@ namespace Assemble_Workshet
             worksheet.Name = "My Worksheet";
 
             //Saving the Excel file
-            workbook.Save(MyDir+"Designer Spreadsheet.xls");
+            workbook.Save(MyDir + "Designer Spreadsheet.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();
         }
         public static void AccesingWorsheetUsingSheetName()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "WorksHeet Operations.xls", FileMode.Open);
 
@@ -76,7 +76,7 @@ namespace Assemble_Workshet
         }
         public static void RemovingWorksheet()
         {
-            string MyDir = "";
+            string MyDir = @"=Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "WorksHeet Operations.xls", FileMode.Open);
 
@@ -90,7 +90,7 @@ namespace Assemble_Workshet
         }
         public static void RemovingWorksheetUsingIndex()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(MyDir + "WorksHeet Operations.xls", FileMode.Open);
 

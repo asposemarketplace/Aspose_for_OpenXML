@@ -1,14 +1,8 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aspose.Cells;
 
 namespace Export_frm_Worksheet
 {
@@ -31,7 +25,7 @@ namespace Export_frm_Worksheet
            //Accessing the first worksheet in the Excel file
            Worksheet worksheet = workbook.Worksheets[0];
 
-           //Exporting the contents of 1 rows and 2 columns starting from 1st cell to DataTable
+           //Exporting the contents of 2 rows and 2 columns starting from 1st cell to DataTable
            DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0,2, 2, true);
 
            //Binding the DataTable with DataGrid
@@ -68,7 +62,7 @@ namespace Export_frm_Worksheet
             //Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Exporting the contents of 1 rows and 2 columns starting from 1st cell to DataTable
+            //Exporting the contents of 2 rows and 2 columns starting from 1st cell to DataTable
             DataTable dataTable = worksheet.Cells.ExportDataTableAsString(0, 0, 2, 2, true);
 
             //Binding the DataTable with DataGrid

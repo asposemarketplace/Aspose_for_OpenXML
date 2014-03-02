@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adding Formula", "Adding Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculate Formula once", "Calculate Formula once\Calculate Formula once.csproj", "{E1E47E5A-00AA-4813-972A-A226D888CEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Direct Formulae Call", "Direct Formulae Call\Direct Formulae Call.csproj", "{F64D4044-28D4-4EB8-8265-34B00B6122E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Direct Formula Call", "Direct Formulae Call\Direct Formula Call.csproj", "{F64D4044-28D4-4EB8-8265-34B00B6122E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

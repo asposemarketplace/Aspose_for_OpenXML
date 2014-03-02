@@ -1,12 +1,8 @@
-﻿using Aspose.Words;
-using Aspose.Words.Saving;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Words;
+using Aspose.Words.Saving;
 
 namespace Render_doc_in_Pages_as_PDF
 {
@@ -20,7 +16,7 @@ namespace Render_doc_in_Pages_as_PDF
 
             // Open the document.
             Document doc = new Document(dataDir + "SaveAsPNG.doc");
-            
+
             //Create an ImageSaveOptions object to pass to the Save method
             ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Png);
             options.Resolution = 160;
@@ -29,7 +25,7 @@ namespace Render_doc_in_Pages_as_PDF
             for (int i = 0; i < doc.PageCount; i++)
             {
                 options.PageIndex = i;
-                doc.Save(string.Format(dataDir+i+"SaveAsPNG out.Png", i), options);
+                doc.Save(string.Format(dataDir + i + "SaveAsPNG out.Png", i), options);
             }
 
         }

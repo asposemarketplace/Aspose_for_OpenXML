@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Converting_Chart_to_Image
+namespace ConvertingChartToImage
 {
     class Program
     {
@@ -20,7 +20,7 @@ namespace Converting_Chart_to_Image
         }
         public static void ConvertingChartToEMF()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -52,7 +52,7 @@ namespace Converting_Chart_to_Image
         }
         public static void ConvertingCharttoJPEG()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -84,7 +84,7 @@ namespace Converting_Chart_to_Image
         }
         public static void ConvertingCharttoPNG()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -116,7 +116,7 @@ namespace Converting_Chart_to_Image
         }
         public static void ConvertingChartTOTIFF()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -146,9 +146,9 @@ namespace Converting_Chart_to_Image
             //Converting chart to image.
             chart.ToImage(MyDir + "Chart to Tiff Image.Tiff", System.Drawing.Imaging.ImageFormat.Tiff);
         }
-        public static void ConvertinfChartTOMultiPageTIFF()
+        public static void ConvertingChartTOMultiPageTIFF()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -184,11 +184,11 @@ namespace Converting_Chart_to_Image
             options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
             options.OnePagePerSheet = true;
             //Converting chart to image.
-            chart.ToImage(MyDir + "Chart to Tiff Image.tiff",options);            
+            chart.ToImage(MyDir + "Chart to Tiff Image.tiff", options);
         }
         public static void ConvertingChartToBMP()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object

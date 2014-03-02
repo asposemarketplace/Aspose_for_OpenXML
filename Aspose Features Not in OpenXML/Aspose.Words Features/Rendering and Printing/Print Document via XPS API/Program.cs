@@ -27,9 +27,9 @@ namespace XpsPrint
                 // Sample infrastructure.
                 string exeDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar;
                 string dataDir = new Uri(new Uri(exeDir), @"../Data/").LocalPath;
-//ExStart
-//ExId:XpsPrint_Main
-//ExSummary:Invoke the utility class to print via XPS.
+                //ExStart
+                //ExId:XpsPrint_Main
+                //ExSummary:Invoke the utility class to print via XPS.
                 // Open a sample document in Aspose.Words.
                 Aspose.Words.Document document = new Aspose.Words.Document(dataDir + "Print via XPS API.doc");
 
@@ -38,7 +38,7 @@ namespace XpsPrint
 
                 // Print the document.
                 XpsPrintHelper.Print(document, printerName, "test", true);
-//ExEnd
+                //ExEnd
                 Console.WriteLine("Printed successfully.");
             }
             catch (Exception e)

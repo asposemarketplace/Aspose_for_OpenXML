@@ -1,13 +1,9 @@
-﻿using Aspose.Words;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Words;
 
 namespace Nested_Mail_Merge_Regions
 {
@@ -35,7 +31,7 @@ namespace Nested_Mail_Merge_Regions
             // Save the output to file
             doc.Save(dataDir + "Invoice Out.doc");
 
-            Debug.Assert(doc.MailMerge.GetFieldNames().Length == 0, "There was a problem with mail merge"); 
+            Debug.Assert(doc.MailMerge.GetFieldNames().Length == 0, "There was a problem with mail merge");
         }
     }
     public class DataRelationExample

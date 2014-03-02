@@ -11,7 +11,7 @@ namespace Copy_Worksheet
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Create a new Workbook.
             //Open an existing Excel file.
             Workbook wb = new Workbook(MyDir + "ResultedBook.xls");

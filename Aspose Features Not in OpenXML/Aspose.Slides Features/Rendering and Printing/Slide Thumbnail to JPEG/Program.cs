@@ -1,10 +1,5 @@
-﻿using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
+using Aspose.Slides.Pptx;
 
 namespace Slide_Thumbnail_to_JPEG
 {
@@ -12,9 +7,9 @@ namespace Slide_Thumbnail_to_JPEG
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate a Presentation class that represents the presentation file
-            using (PresentationEx pres = new PresentationEx(MyDir+"Slides Test Presentation.pptx"))
+            using (PresentationEx pres = new PresentationEx(MyDir + "Slides Test Presentation.pptx"))
             {
 
                 //Access the first slide
@@ -24,7 +19,7 @@ namespace Slide_Thumbnail_to_JPEG
                 Bitmap bmp = sld.GetThumbnail(1f, 1f);
 
                 //Save the image to disk in JPEG format
-                bmp.Save(MyDir+"Test Thumbnail.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                bmp.Save(MyDir + "Test Thumbnail.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
             }
         }

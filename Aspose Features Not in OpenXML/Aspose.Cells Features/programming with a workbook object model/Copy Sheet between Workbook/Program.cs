@@ -11,7 +11,7 @@ namespace Sheet_btw_Workbok
     {
         static void Main(string[] args)
         {
-            string MyDir = ""; 
+            string MyDir = @"Files\";
             //Create a new Workbook.
             Workbook excelWorkbook0 = new Workbook();
 
@@ -51,8 +51,8 @@ namespace Sheet_btw_Workbok
             ws1.Copy(ws0);
 
             //Save the excel file.
-            excelWorkbook1.Save(MyDir+"copyworksheet.xls");
- 
+            excelWorkbook1.Save(MyDir + "copyworksheet.xls");
+
         }
     }
 }

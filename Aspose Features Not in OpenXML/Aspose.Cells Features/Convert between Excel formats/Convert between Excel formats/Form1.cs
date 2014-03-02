@@ -50,8 +50,11 @@ namespace Convert_between_Excel_formats
                            case "PDF":
                                workbook.Save(saveFileDialog1.FileName, SaveFormat.Pdf);
                                break;
-                           case "HTML":
-                               workbook.Save(saveFileDialog1.FileName, SaveFormat.Html);
+                           case "MHTML":
+                               
+                           //Specify the HTML Saving Options
+                               HtmlSaveOptions sv = new HtmlSaveOptions(SaveFormat.MHtml);
+                               workbook.Save(saveFileDialog1.FileName, sv);
                                break;
                            default:
                                break;

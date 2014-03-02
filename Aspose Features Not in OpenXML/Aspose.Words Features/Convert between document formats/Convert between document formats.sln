@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converting Doc to PDF", "Converting Doc to PDF\Converting Doc to PDF.csproj", "{1957FB2F-E0FB-4E5E-8647-C546AA75EA40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converting Document to PDF", "Converting Doc to PDF\Converting Document to PDF.csproj", "{1957FB2F-E0FB-4E5E-8647-C546AA75EA40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convrt to MHTML Email", "Convrt to MHTML Email\Convrt to MHTML Email.csproj", "{FED3F5E7-EEE5-4E4D-A110-BF9688ECD467}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert to MHTML Email", "Convrt to MHTML Email\Convert to MHTML Email.csproj", "{FED3F5E7-EEE5-4E4D-A110-BF9688ECD467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert Doc to EPUB", "Convert Doc to EPUB\Convert Doc to EPUB.csproj", "{2EA598AF-03F7-4E6E-B520-76C090E69195}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert Document to EPUB", "Convert Doc to EPUB\Convert Document to EPUB.csproj", "{2EA598AF-03F7-4E6E-B520-76C090E69195}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert to byte array", "Convert to byte array\Convert to byte array.csproj", "{C7C6918E-FE7A-417A-8E06-EDF073B2CEDD}"
 EndProject

@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chart_to_Image_wit_Img_Opt
+namespace ChartWithImageOptions
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             //Adding a new worksheet to the Excel object
@@ -48,7 +48,7 @@ namespace Chart_to_Image_wit_Img_Opt
             options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
             options.OnePagePerSheet = true;
             //Converting chart to image.
-            chart.ToImage(MyDir + "Chart to Tiff Image with Image Options.tiff", options);     
+            chart.ToImage(MyDir + "Chart to Tiff Image with Image Options.tiff", options);
         }
     }
 }

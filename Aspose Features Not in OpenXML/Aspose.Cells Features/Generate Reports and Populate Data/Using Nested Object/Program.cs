@@ -1,9 +1,5 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Aspose.Cells;
 
 namespace Using_Nested_Object
 {
@@ -11,7 +7,7 @@ namespace Using_Nested_Object
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Initialize WorkbookDesigner object
             WorkbookDesigner designer = new WorkbookDesigner();
             //Load the template file

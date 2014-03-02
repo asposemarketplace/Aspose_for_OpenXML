@@ -1,11 +1,5 @@
 ﻿using Aspose.Slides;
 using Aspose.Slides.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Slides.Pptx;
 namespace Find_and_Replace
 {
     class Program
@@ -16,11 +10,11 @@ namespace Find_and_Replace
         }
         public static void findReplaceText(string strToFind, string strToReplaceWith)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Open the presentation
-            Presentation pres = new Presentation(MyDir+"Find and Replace.ppt");
+            Presentation pres = new Presentation(MyDir + "Find and Replace.ppt");
             //Get all text boxes in the presentation
-            ITextBox[] tb = SlideUtil.GetAllTextBoxes(pres,false);
+            ITextBox[] tb = SlideUtil.GetAllTextBoxes(pres, false);
             for (int i = 0; i < tb.Length; i++)
                 foreach (Paragraph para in tb[i].Paragraphs)
                     foreach (Portion port in para.Portions)

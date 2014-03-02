@@ -1,10 +1,4 @@
-﻿using Aspose.Slides;
-using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Aspose.Slides.Pptx;
 
 namespace Conversion_to_Tiff
 {
@@ -12,9 +6,9 @@ namespace Conversion_to_Tiff
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate a Presentation object that represents a presentation file
-            using (PresentationEx pres = new PresentationEx(MyDir+"Conversion.pptx"))
+            using (PresentationEx pres = new PresentationEx(MyDir + "Conversion.pptx"))
             {
 
                 //Saving the presentation to TIFF document

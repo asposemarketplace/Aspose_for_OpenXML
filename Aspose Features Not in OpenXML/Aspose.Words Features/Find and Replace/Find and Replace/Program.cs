@@ -1,21 +1,16 @@
-﻿using Aspose.Words;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using Aspose.Words;
 
 namespace Find_and_Replace
 {
 
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-            string MyDir = "";
-            Document doc = new Document(MyDir+"Find and Replace.doc");
+            string MyDir = @"Files\";
+            Document doc = new Document(MyDir + "Find and Replace.doc");
             ReplaceOneWordWithAnother(doc);
             doc.Save(MyDir + "Range.ReplaceOneWordWithAnother Out.doc");
             ReplaceTwoSimilarWords(doc);
@@ -25,16 +20,16 @@ namespace Find_and_Replace
         static void ReplaceOneWordWithAnother(Document doc)
         {
             doc.Range.Replace("sad", "bad", false, true);
-            
+
         }
         static void ReplaceTwoSimilarWords(Document doc)
         {
             doc.Range.Replace(new Regex("[s|m]ad"), "bad");
-            
+
         }
         public void ReplaceWithEvaluator()
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             Document doc = new Document(MyDir + "Range.ReplaceWithEvaluator.doc");
             doc.Range.Replace(new Regex("[s|m]ad"), new MyReplaceEvaluator(), true);
             doc.Save(MyDir + "Range.ReplaceWithEvaluator Out.doc");
@@ -55,6 +50,6 @@ namespace Find_and_Replace
 
             private int mMatchNumber;
         }
- 
+
     }
 }

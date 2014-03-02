@@ -1,18 +1,13 @@
-﻿using Aspose.Words;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Aspose.Words;
 
-namespace Convert_to_byte_array
+namespace ConvertToByteArray
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             // Load the document.
             Document doc = new Document(MyDir + "Converting Document.docx");
 

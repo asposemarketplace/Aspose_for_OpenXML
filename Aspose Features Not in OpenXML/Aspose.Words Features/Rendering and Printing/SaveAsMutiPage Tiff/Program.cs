@@ -1,12 +1,8 @@
-﻿using Aspose.Words;
-using Aspose.Words.Saving;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Words;
+using Aspose.Words.Saving;
 
 namespace SaveAsMutiPage_Tiff
 {
@@ -20,7 +16,7 @@ namespace SaveAsMutiPage_Tiff
 
             // Open the document.
             Document doc = new Document(dataDir + "SaveAsMutiPageTiff.doc");
-            
+
             //ExStart
             //ExId:SaveAsMultipageTiff_save
             //ExSummary:Convert document to TIFF.

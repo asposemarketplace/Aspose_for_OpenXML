@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Print_SpreadSheet_with_Opt
+namespace PrintSpreadSheetWithOptions
 {
     class Program
     {

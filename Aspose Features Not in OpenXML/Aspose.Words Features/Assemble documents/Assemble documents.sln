@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joining Mutiple documents", "Joining Mutiple documents\Joining Mutiple documents.csproj", "{D8117E55-C128-4A7F-8689-AE80F0AF7A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keping the content frm split", "keping the content frm split\keping the content frm split.csproj", "{E918AF01-5DFB-4340-91FD-0A7555DF9E41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keeping the content from split", "keping the content frm split\keeping the content from split.csproj", "{E918AF01-5DFB-4340-91FD-0A7555DF9E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,10 +1,5 @@
 ﻿using Aspose.Slides.Export;
 using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tiff_conversion_with_note
 {
@@ -12,7 +7,7 @@ namespace Tiff_conversion_with_note
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate a Presentation object that represents a presentation file
             PresentationEx pres = new PresentationEx(MyDir + "Conversion.pptx");
 

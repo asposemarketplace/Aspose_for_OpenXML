@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Words;
-namespace keping_the_content_frm_split
+namespace KeepingTheContentFromSplit
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             Document dstDoc = new Document(MyDir + "src.doc");
-            Document srcDoc = new Document(MyDir+ "srcDocument.doc");
+            Document srcDoc = new Document(MyDir + "srcDocument.doc");
 
             // Set the source document to appear straight after the destination document's content.
             srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;

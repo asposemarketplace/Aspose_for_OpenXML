@@ -51,7 +51,7 @@
             // 
             // BTN_Export
             // 
-            this.BTN_Export.Location = new System.Drawing.Point(113, 270);
+            this.BTN_Export.Location = new System.Drawing.Point(12, 193);
             this.BTN_Export.Name = "BTN_Export";
             this.BTN_Export.Size = new System.Drawing.Size(207, 23);
             this.BTN_Export.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // BTN_Select
             // 
-            this.BTN_Select.Location = new System.Drawing.Point(317, 3);
+            this.BTN_Select.Location = new System.Drawing.Point(276, 3);
             this.BTN_Select.Name = "BTN_Select";
             this.BTN_Select.Size = new System.Drawing.Size(75, 23);
             this.BTN_Select.TabIndex = 2;
@@ -93,7 +93,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(485, 13);
+            this.label2.Location = new System.Drawing.Point(398, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 13);
             this.label2.TabIndex = 5;
@@ -102,14 +102,14 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(468, 37);
+            this.dataGridView2.Location = new System.Drawing.Point(391, 37);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(240, 150);
             this.dataGridView2.TabIndex = 6;
             // 
             // BTN_NonStronglyExport
             // 
-            this.BTN_NonStronglyExport.Location = new System.Drawing.Point(612, 226);
+            this.BTN_NonStronglyExport.Location = new System.Drawing.Point(391, 193);
             this.BTN_NonStronglyExport.Name = "BTN_NonStronglyExport";
             this.BTN_NonStronglyExport.Size = new System.Drawing.Size(172, 23);
             this.BTN_NonStronglyExport.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 305);
+            this.ClientSize = new System.Drawing.Size(654, 274);
             this.Controls.Add(this.BTN_NonStronglyExport);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);

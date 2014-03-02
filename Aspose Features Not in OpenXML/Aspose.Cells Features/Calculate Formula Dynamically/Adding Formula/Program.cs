@@ -1,9 +1,4 @@
 ﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Adding_Formula
 {
@@ -11,7 +6,7 @@ namespace Adding_Formula
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -40,7 +35,7 @@ namespace Adding_Formula
             string value = worksheet.Cells["A4"].Value.ToString();
 
             //Saving the Excel file
-            workbook.Save(MyDir+"Adding Formula.xls");
+            workbook.Save(MyDir + "Adding Formula.xls");
         }
     }
 }

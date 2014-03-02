@@ -1,11 +1,6 @@
-﻿using Aspose.Email.Mail;
+﻿using System.IO;
+using Aspose.Email.Mail;
 using Aspose.Words;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Convrt_to_MHTML_Email
 {
@@ -13,7 +8,7 @@ namespace Convrt_to_MHTML_Email
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             // Load the document into Aspose.Words.
             string srcFileName = Path.Combine(MyDir, "Converting Document.docx");
             Document doc = new Document(srcFileName);
@@ -27,8 +22,8 @@ namespace Convrt_to_MHTML_Email
 
             // Create an Aspose.Network MIME email message from the stream.
             MailMessage message = MailMessage.Load(stream, MessageFormat.Mht);
-            message.From = "zeeshan.zms@gmail.com";
-            message.To = "zeeshan.shafqat@aspose.com";
+            message.From = "from@gmail.com";
+            message.To = "to@gmail.com";
             message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
             // Send the message using Aspose.Email

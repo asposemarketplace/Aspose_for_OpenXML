@@ -1,11 +1,5 @@
-﻿using Aspose.Slides;
+﻿using System.Drawing;
 using Aspose.Slides.Pptx;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace User_Defined_Thumbnail
 {
@@ -13,9 +7,9 @@ namespace User_Defined_Thumbnail
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Instantiate a Presentation class that represents the presentation file
-            using (PresentationEx pres = new PresentationEx(MyDir+"Slides Test Presentation.pptx"))
+            using (PresentationEx pres = new PresentationEx(MyDir + "Slides Test Presentation.pptx"))
             {
 
                 //Access the first slide

@@ -1,11 +1,6 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Cells;
 
 namespace Image_Markers
 {
@@ -13,9 +8,9 @@ namespace Image_Markers
     {
         static void Main(string[] args)
         {
-            string MyDir = "";
+            string MyDir = @"Files\";
             //Get the image data.
-            byte[] imageData = File.ReadAllBytes(MyDir+"Thumbnail.jpg");
+            byte[] imageData = File.ReadAllBytes(MyDir + "Thumbnail.jpg");
             //Create a datatable.
             DataTable t = new DataTable("Table1");
             //Add a column to save pictures.
@@ -43,7 +38,7 @@ namespace Image_Markers
             //Process the markers.
             designer.Process();
             //Save the Excel file.
-            designer.Workbook.Save(MyDir+"out_ImageSmartBook.xls");
+            designer.Workbook.Save(MyDir + "out_ImageSmartBook.xls");
         }
     }
 }

@@ -1,9 +1,5 @@
-﻿using Aspose.Cells;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Aspose.Cells;
 
 namespace Calculate_Formula_once
 {
@@ -11,7 +7,7 @@ namespace Calculate_Formula_once
     {
         static void Main(string[] args)
         {
-            string filePath = "Without creating formulae chain.xls";
+            string filePath = "Without creating formula chain.xls";
 
             //Load the template workbook
             Workbook workbook = new Workbook(filePath);
@@ -27,7 +23,7 @@ namespace Calculate_Formula_once
 
             //Print the time after formula calculation
             Console.WriteLine(DateTime.Now);
-            workbook.Save("Without creating formulae chain.xls");
+            workbook.Save("Without creating formula chain.xls");
         }
     }
 }

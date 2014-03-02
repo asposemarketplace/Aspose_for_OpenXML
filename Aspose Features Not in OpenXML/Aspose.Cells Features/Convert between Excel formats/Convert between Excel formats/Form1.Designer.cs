@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 302);
+            this.ClientSize = new System.Drawing.Size(262, 302);
             this.Controls.Add(this.BTN_Convert);
             this.Controls.Add(this.TXBX_OutputFileName);
             this.Controls.Add(this.LBL_FileName);
