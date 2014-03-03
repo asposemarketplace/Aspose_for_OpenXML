@@ -7,7 +7,7 @@ namespace Converting_Doc_to_PDF
         {
             string MyDir = @"Files\";
             Document doc = new Document(MyDir + "Converting Document.docx");
-            doc.Save(MyDir + "Document.Doc2PdfSave Out.pdf");
+            doc.Save(MyDir + "Document.Doc2PdfSave Out.pdf", SaveFormat.Pdf);
         }
     }
 }
