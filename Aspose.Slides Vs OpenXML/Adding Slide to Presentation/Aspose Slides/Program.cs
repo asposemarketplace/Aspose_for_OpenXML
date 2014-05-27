@@ -1,4 +1,6 @@
-﻿using Aspose.Slides;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using Aspose.Slides;
 
 namespace Aspose_Slides
 {

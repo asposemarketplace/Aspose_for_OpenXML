@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Data;
 using System.IO;
 using Aspose.Cells;
 

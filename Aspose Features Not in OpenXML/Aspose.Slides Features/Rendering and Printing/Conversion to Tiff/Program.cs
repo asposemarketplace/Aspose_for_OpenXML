@@ -1,4 +1,6 @@
-﻿using Aspose.Slides.Pptx;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using Aspose.Slides.Pptx;
 
 namespace Conversion_to_Tiff
 {

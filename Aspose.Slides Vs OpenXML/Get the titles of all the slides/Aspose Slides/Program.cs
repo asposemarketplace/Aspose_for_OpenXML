@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System;
 using System.Collections.Generic;
 using Aspose.Slides.Pptx;
 

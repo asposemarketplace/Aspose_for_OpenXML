@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.IO;
 using Aspose.Email.Mail;
 using Aspose.Words;
 

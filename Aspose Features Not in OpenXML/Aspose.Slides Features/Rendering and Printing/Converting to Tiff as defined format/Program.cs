@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Drawing;
 using Aspose.Slides.Export;
 using Aspose.Slides.Pptx;
 

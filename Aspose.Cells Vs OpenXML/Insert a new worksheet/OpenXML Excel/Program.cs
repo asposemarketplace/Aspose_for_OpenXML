@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Linq;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 

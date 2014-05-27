@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Text.RegularExpressions;
 using Aspose.Words;
 
 namespace Find_and_Replace

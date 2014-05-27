@@ -1,4 +1,6 @@
-﻿using Aspose.Slides.Export;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using Aspose.Slides.Export;
 using Aspose.Slides.Pptx;
 
 namespace Conversion_PPT_to_PPTX

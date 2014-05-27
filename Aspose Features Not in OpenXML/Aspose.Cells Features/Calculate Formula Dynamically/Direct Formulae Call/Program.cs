@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Diagnostics;
 using Aspose.Cells;
 
 namespace Direct_Formula_Call

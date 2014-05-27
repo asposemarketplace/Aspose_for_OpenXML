@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using System.Collections.Generic;
 using Aspose.Cells;
 
 namespace Using_Custom_Objects

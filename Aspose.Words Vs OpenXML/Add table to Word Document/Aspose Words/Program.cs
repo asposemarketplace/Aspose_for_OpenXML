@@ -1,4 +1,6 @@
-﻿using Aspose.Words;
+﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
+
+using Aspose.Words;
 
 namespace Aspose_Words
 {
